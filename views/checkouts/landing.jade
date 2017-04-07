@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  .wrapper: .checkout.container: .content
+    header
+      h1 $#{totalamount} total collection
+      p.subheading Make a test payment using PayPal or a card
+      
+      ul
+       each user in users
+        li
+          div.namecard
+            h5 #{user.name} donated 
+                span $AUD#{user.amount}
+
+
+

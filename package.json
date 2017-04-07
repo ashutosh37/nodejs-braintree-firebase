@@ -17,16 +17,19 @@
   },
   "dependencies": {
     "body-parser": "~1.14.1",
+    "braintree": "^1.30.0",
+    "connect-flash": "~0.1.1",
     "cookie-parser": "~1.4.0",
     "debug": "~2.2.0",
-    "express": "~4.13.1",
-    "jade": "~1.11.0",
-    "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0",
-    "braintree": "^1.30.0",
     "dotenv": "~1.2.0",
-    "connect-flash": "~0.1.1",
-    "express-session": "~1.12.1"
+    "express": "~4.13.1",
+    "express-session": "~1.12.1",
+    "firebase": "^3.0.3",
+    "firebase-admin": "^4.2.0",
+    "jade": "~1.11.0",
+    "moment": "^2.18.1",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
   },
   "engines": {
     "node": ">=0.12.7"
