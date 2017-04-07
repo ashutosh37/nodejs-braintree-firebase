@@ -3,7 +3,7 @@ extends ../layout
 block content
   .wrapper: .checkout.container: .content
     header
-      h1 $#{totalamount} total collection
+      h3 $#{totalamount} total collection
       p.subheading Make a test payment using PayPal or a card
 
     form#payment-form(action="/checkouts", method="post")
@@ -12,7 +12,7 @@ block content
           #bt-dropin
 
         label(for="amount")
-          span.input-label Amount
+          span.input-label Amount($AUD)
           .input-wrapper.amount-wrapper
             input#amount(name="amount" type="tel" min="1" placeholder="Amount" value="10")
          label(for="fullName")
@@ -24,7 +24,7 @@ block content
           .input-wrapper.email-wrapper
             input#email(name="email" type="email" placeholder="Email")
 
-      button.button(type="submit")
+      button.btn.waves-effect.waves-light(type="submit")
         span Donate Now
 
   script(src="https://js.braintreegateway.com/v2/braintree.js")

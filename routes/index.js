@@ -55,7 +55,6 @@ router.get('/', function (req, res) {
 router.get('/checkouts/landing', function(req,res){
   var ref = db.ref("/");
     ref.on("value", function(snapshot) {
-        console.log(snapshot.val());
         res.render('checkouts/landing', {totalamount : snapshot.val().totalamount , users: snapshot.val().Users});
       }, function (errorObject) {
         console.log("The read failed: " + errorObject.code);

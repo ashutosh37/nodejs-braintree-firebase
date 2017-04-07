@@ -3,22 +3,25 @@ html
   head
     title BraintreeExpressExample
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="stylesheet", href="/stylesheets/app.css")
-    link(rel="stylesheet", href="/stylesheets/overrides.css")
+    //- link(rel="stylesheet", href="/stylesheets/app.css")
+    //- link(rel="stylesheet", href="/stylesheets/overrides.css")
     script(type="text/javascript", src="/javascript/vendor/jquery-2.1.4.min.js")
     script(type="text/javascript", src="/javascript/vendor/jquery.lettering-0.6.1.min.js")
     script(type="text/javascript", src="/javascript/demo.js")
+    link(rel="stylesheet" href="/stylesheets/materialize.min.css")
+    script(src="/javascript/vendor/materialize.min.js")
+          
   body
-    header.main
-      .container.wide
-        .content.slim
-          .set
-            .fill
-              a.headerlink(href='/')
-                img.headerimg(src="../images/ram.jpg")
-              a.newlink(href='/checkouts/new') Make donation now
+    nav
+      .nav-wrapper
+       a.brand-logo(href='/') Logo
+        
+    .container
+       .row
+         .col.offset-s2
+              a.btn.btn-large.cyan(href='/checkouts/new') Make donation now
               
-
+    block content
  
  .notice-wrapper
         if messages && messages.length > 0
@@ -26,4 +29,4 @@ html
             for msg in messages
               span.notice-message= msg.msg
 
-    block content
+    
