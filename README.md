@@ -19,6 +19,10 @@ An example Braintree integration for Node in the Express framework.
    ```sh
    npm start
    ```
+
+## Deploying to Azure 
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/??repository=https://github.com/ashutosh37/nodejs-braintree-firebase)
+
 ## Deploying to Heroku
 
 You can deploy this app directly to Heroku to see the app live. Skip the setup instructions above and click the button below. This will walk you through getting this app up and running on Heroku in minutes.
